@@ -27,7 +27,7 @@ label start:
     narration "{cps=20}Welcome to the Undertale Dating Simulator Demo! \nTest Scenario: Date with Papyrus \nNote: Only dummy graphics were used for testing purposes of the engine. The music is from the original Undertale game.{/cps}"
     
     #scene: papyrus' house
-    play music "music-home.mp3"
+    play music "music/home.mp3"
     scene background dummy
     show papyrus dummy
 
@@ -59,7 +59,7 @@ label start:
         scene background dummy
         with fade
         show papyrus dummy
-        play music "music-dating-start.mp3"
+        play music "music/dating-start.mp3"
     
         papyrus "{font=papyrus.ttf}{cps=20}So, here we are, on our date.{/cps}{/font}"
         papyrus "{font=papyrus.ttf}{cps=20}I have never actually done this before. But you can’t spell prepared without several letters from my name. I actually brought a date rule book from the library. We are ready to have a great time!{/cps}{/font}"
