@@ -16,6 +16,9 @@ define papyrus = Character('Papyrus', color="#F69E18")
 init python:
     style.default.font = "8bitOperatorPlus-Bold.ttf"
 
+#default-text-speed
+#config.default_text_cps=20
+
 
 label start:
 
