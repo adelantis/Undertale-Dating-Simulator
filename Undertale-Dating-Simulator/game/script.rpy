@@ -34,14 +34,14 @@ label start:
     papyrus "{font=papyrus.ttf}{cps=20}If you are done looking, maybe we can go in, and do whatever people do at dates?{/cps}{/font}"
     
     #scene: papyrus' room
-    scene background dummy
+    scene background papyrus-room
     with fade
     show papyrus dummy
     
     papyrus "{font=papyrus.ttf}{cps=20}The internet! I am a dozen followers again, from a double digits follower count!{/cps}{/font}"
     
     #just an optional fade
-    scene background dummy
+    scene background papyrus-room
     with fade
     show papyrus dummy
     

@@ -13,11 +13,14 @@ init -1 python hide:
 
     config.screen_width = 800
     config.screen_height = 600
+    
+    #config.screen_width = 1920
+    #config.screen_height = 1020
 
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.window_title = u"Undertale Dating Simulator (Demo)"
+    config.window_title = "Undertale Dating Simulator (Demo)"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
