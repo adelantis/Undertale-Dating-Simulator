@@ -1,0 +1,71 @@
+#Characters
+image papyrus shape = "papyrus.png"
+
+#Background
+image bg forrest = "background.jpg"
+
+# Character
+define narration = Character(kind=nvl)
+define system = Character('', color="#FFFFFF") #system, "invisible", white
+define papyrus = Character('Papyrus') #papyrus, papyrus
+
+label start:
+
+    #scene: welcome
+    scene bg forrest
+    narration "{cps=20}Welcome to the Undertale Dating Simulator Demo! \nTest Scenario: Date with Papyrus \nNote: Only dummy graphics were used for testing purposes of the engine. The music is from the original Undertale game.{/cps}"
+
+    #scene: papyrus' house
+    $ papyrus_love = 0
+    play music "home.mp3"
+    scene bg forrest
+    show papyrus shape
+
+    papyrus "{cps=20}{font=PAPYRUS.ttf}If you are done looking, maybe we can go in and do whatever people do at dates?{/font}{/cps}"
+    
+    #scene: papyrus' room
+    scene bg forrest
+    with fade
+    show papyrus shape
+    
+    papyrus "{cps=20}{font=PAPYRUS.ttf}The internet! I have a dozen followers again, from a double digits follower count!{/font}{/cps}"
+    
+    #just an optional fade
+    scene bg forrest
+    with fade
+    show papyrus shape
+    
+    papyrus "{cps=20}{font=PAPYRUS.ttf}These are all the bone attacks I used on you! Feels just like yersterday, even thought it basically just happened.{/font}{/cps}"
+    papyrus "{cps=20}{font=PAPYRUS.ttf}So, are you ready to start the date?{/font}{/cps}"
+    
+    menu:
+        "Yes":
+            jump date
+        "No":
+            jump nodate
+    
+    label date:
+        #scene: dating start
+        scene bg forrest
+        with fade
+        show papyrus shape
+        play music "dating start.mp3"
+    
+        papyrus "{cps=20}{font=PAPYRUS.ttf}So, here we are, on our date.{/font}{/cps}"
+        papyrus "{cps=20}{font=PAPYRUS.ttf}I have never actually done this before. But you can’t spell prepared without several letters from my name. I actually brought a date rule book from the library. We are ready to have a great time!{/font}{/cps}"
+        papyrus "{cps=20}{font=PAPYRUS.ttf}Let’s see, press C, for dating hud{/font}{/cps}"
+        
+        hide papyrus shape
+        
+        system "{cps=20}Demo ends here, thanks for testing.{/cps}"
+        system "{cps=20}Stay determined...{/cps}"
+    return
+    
+    label nodate:
+        papyrus "{cps=20}{font=PAPYRUS.ttf}Ok! I will be right here if you need me!{/cps}"
+        
+        hide papyrus shape
+        
+        system "{cps=20}Demo ends here, thanks for testing.{/cps}"
+        system "{cps=20}Stay determined...{/cps}"
+    return
