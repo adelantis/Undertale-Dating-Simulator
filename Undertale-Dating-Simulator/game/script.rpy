@@ -30,7 +30,12 @@ label start:
     play music "audio/music-home.mp3"
     scene background dummy
     show papyrus dummy
-
+    
+    papyrus "{font=papyrus.ttf}{cps=20}So you came back to have a date with me!{/cps}{/font}"
+    papyrus "{font=papyrus.ttf}{cps=20}You must be really serious about this...{/cps}{/font}"
+    papyrus "{font=papyrus.ttf}{cps=20}I'll have to take you someplace really special...{/cps}{/font}"
+    papyrus "{font=papyrus.ttf}{cps=20}A place I like to spend a lot of time!!!{/cps}{/font}"
+    papyrus "{font=papyrus.ttf}{cps=20}My house!!!{/cps}{/font}"
     papyrus "{font=papyrus.ttf}{cps=20}If you are done looking, maybe we can go in, and do whatever people do at dates?{/cps}{/font}"
     
     #scene: papyrus' room
