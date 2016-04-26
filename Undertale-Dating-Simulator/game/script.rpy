@@ -36,18 +36,20 @@ label start:
     papyrus "{font=papyrus.ttf}{cps=20}I'll have to take you someplace really special...{/cps}{/font}"
     papyrus "{font=papyrus.ttf}{cps=20}A place I like to spend a lot of time!!!{/cps}{/font}"
     papyrus "{font=papyrus.ttf}{cps=20}My house!!!{/cps}{/font}"
-    papyrus "{font=papyrus.ttf}{cps=20}If you are done looking, maybe we can go in, and do whatever people do at dates?{/cps}{/font}"
+    papyrus "{font=papyrus.ttf}{cps=20}If you are done looking, maybe we can go in, and do whatever people do at dates???{/cps}{/font}"
+    
+    
     
     #scene: papyrus' room
     scene background papyrus-room
     with fade
-    show papyrus dummy
+    #show papyrus dummy
     
     papyrus "{font=papyrus.ttf}{cps=20}The internet! I am a dozen followers again, from a double digits follower count!{/cps}{/font}"
     
     #just an optional fade
-    scene background papyrus-room
-    with fade
+    #scene background papyrus-room
+    #with fade
     show papyrus dummy
     
     papyrus "{font=papyrus.ttf}{cps=20}These are all the bone attacks I used on you! Feels just like yersterday, even thought it basically just happened.{/cps}{/font}"
