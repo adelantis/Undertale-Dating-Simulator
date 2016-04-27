@@ -10,11 +10,11 @@ image background papyrus_room = "background-papyrus-room.png"
 #character-settings
 define narration = Character(kind=nvl)
 define system = Character('', color="#FFFFFF")
-define papyrus = Character('Papyrus', color="#F69E18", what_prefix='{font=Parchment-MF.ttf}{size=50}', what_suffix='{/size}{/font}')
+define papyrus = Character('Papyrus', color="#F69E18", what_prefix='{font=font/Parchment-MF.ttf}{size=50}', what_suffix='{/size}{/font}')
 
 #default-font
 init python:
-    style.default.font = "DTM-Mono.otf"
+    style.default.font = "font/DTM-Mono.otf"
 
 #default-text-speed
 #config.default_text_cps=20
