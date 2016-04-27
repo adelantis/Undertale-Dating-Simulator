@@ -28,7 +28,8 @@ label start:
         "Waterfall (Not included in Demo)":
             jump notincluded
         "Your Room":
-            "Papyrus leads you to his house"
+            "Papyrus leads you to his house."
+            play music "dating start.mp3"
             papyrus "{cps=20}{font=PAPYRUS.ttf}Well, this is it! If you are ready, maybe we can go in and do whatever people do at dates?{/font}{/cps}"
             #Emotion change: nervous smile
             jump papyrus-room
@@ -40,7 +41,6 @@ label start:
         scene bg forrest
         with fade
         show papyrus shape
-        play music "dating start.mp3"
     
         #This is a choice for now, but the writers want it to be point and click
         menu:
@@ -68,9 +68,12 @@ label start:
             #Emotion change: nervous glance
             papyrus "{cps=20}{font=PAPYRUS.ttf}But, you can't spell prepared without several letters from my name.{/font}{/cps}"
             #Emotion change: reassuring smile/thumbs up
-            papyrus "{cps=20}{font=PAPYRUS.ttf}I actually brough a date rulebook from the library. We are ready to have a great time!{/font}{/cps}"
+            papyrus "{cps=20}{font=PAPYRUS.ttf}I actually brought a date rulebook from the library. We are ready to have a great time!{/font}{/cps}"
             #Emotion change:
-            papyrus "{cps=20}{font=PAPYRUS.ttf}Let's see, press C{/font}{/cps}"
+            papyrus "{cps=20}{font=PAPYRUS.ttf}Let's see, press C for the dating HUD.{/font}{/cps}"
+            #Dating menu appears
+            papyrus "{cps=20}{font=PAPYRUS.ttf}I feel so informed!{/font}{/cps}"
+            papyrus "{cps=20}{font=PAPYRUS.ttf}Ahem! Human! I, The Great Papyrus, will go on a date with you!{/font}{/cps}"
         
     
     
