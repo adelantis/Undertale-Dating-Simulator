@@ -13,7 +13,7 @@ init -1 python hide:
 
     config.screen_width = 800
     config.screen_height = 600
-    
+
     #config.screen_width = 1920
     #config.screen_height = 1020
 
@@ -275,7 +275,7 @@ init -1 python hide:
 
     ## The default text speed in characters per second. 0 is infinite.
 
-    config.default_text_cps = 0
+    config.default_text_cps = 20
 
     ## The default auto-forward time setting.
 
