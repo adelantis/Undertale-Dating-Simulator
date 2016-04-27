@@ -28,6 +28,9 @@ label start:
         "Waterfall (Not included in Demo)":
             jump notincluded
         "Your Room":
+            "Papyrus leads you to his house"
+            papyrus "{cps=20}{font=PAPYRUS.ttf}Well, this is it! If you are ready, maybe we can go in and do whatever people do at dates?{/font}{/cps}"
+            #Emotion change: nervous smile
             jump papyrus-room
         "Snowdin (Not included in Demo)":
             jump notincluded 
@@ -39,16 +42,37 @@ label start:
         show papyrus shape
         play music "dating start.mp3"
     
-        "Papyrus leads you to his house"
-        papyrus "{cps=20}{font=PAPYRUS.ttf}Well, this is it! If you are ready, maybe we can go in and do whatever people do at dates?{/font}{/cps}"
-        papyrus "{cps=20}{font=PAPYRUS.ttf}I have never actually done this before. But you can’t spell prepared without several letters from my name. I actually brought a date rule book from the library. We are ready to have a great time!{/font}{/cps}"
-        papyrus "{cps=20}{font=PAPYRUS.ttf}Let’s see, press C, for dating hud{/font}{/cps}"
+        #This is a choice for now, but the writers want it to be point and click
+        menu:
+            "Check Computer":
+                papyrus "{cps=20}{font=PAPYRUS.ttf}The Internet! I'm quite popular there! I am a dozen away from a double-digit follower count!{/font}{/cps}"
+                jump ready-to-start
+            "Check Closet":
+                papyrus "{cps=20}{font=PAPYRUS.ttf}What? It's not like I have skeletons hanging in my closet!{/font}{/cps}"
+                jump ready-to-start
         
-        hide papyrus shape
+        label ready-to-start:
+            papyrus "{cps=20}{font=PAPYRUS.ttf}So, are you ready to start the date?{/font}{/cps}"
+            menu:
+                "Yes":
+                    papyrus "{cps=20}{font=PAPYRUS.ttf}Great!{/font}{/cps}"
+                    jump start-date
+                "No":
+                    papyrus "{cps=20}{font=PAPYRUS.ttf}Okay! Just let me know when you are ready, Human!{/font}{/cps}"
+                    jump papyrus-room
+                    
+            label start-date:
+            "Dating... Start!"
+            papyrus "{cps=20}{font=PAPYRUS.ttf}So, here we are, on our date.{/font}{/cps}"
+            papyrus "{cps=20}{font=PAPYRUS.ttf}Actually, I have never done this before{/font}{/cps}"
+            #Emotion change: nervous glance
+            papyrus "{cps=20}{font=PAPYRUS.ttf}But, you can't spell prepared without several letters from my name.{/font}{/cps}"
+            #Emotion change: reassuring smile/thumbs up
+            papyrus "{cps=20}{font=PAPYRUS.ttf}I actually brough a date rulebook from the library. We are ready to have a great time!{/font}{/cps}"
+            #Emotion change:
+            papyrus "{cps=20}{font=PAPYRUS.ttf}Let's see, press C{/font}{/cps}"
         
-        system "{cps=20}Demo ends here, thanks for testing.{/cps}"
-        system "{cps=20}Stay determined...{/cps}"
-    return
+    
     
     label notincluded:
         hide papyrus shape
